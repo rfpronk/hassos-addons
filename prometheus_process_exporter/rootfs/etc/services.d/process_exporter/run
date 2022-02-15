@@ -9,4 +9,4 @@ ls -alh /etc
 ls -alh /usr/local/bin
 
 # Run Prometheus
-exec s6-setuidgid prometheus /usr/local/bin/process-exporter --config.path=/etc/prometheus_process-exporter_web.yml
+exec s6-setuidgid prometheus /usr/local/bin/process-exporter --config.path=/etc/prometheus_process-exporter.yml
