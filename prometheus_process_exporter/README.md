@@ -43,23 +43,3 @@ The following Prometheus query should return data:
 ## License
 
 WIP
-
-## Known issues
-
-- [ ] The "Open Web UI" button doesn't work when Home Assistant is behind a reverse proxy.
-- [X] Only tested on `amd64` builds.
-
-## TODO
-
-- [X] Add HTTP Basic Auth
-- [ ] Add abilty to enter plain-text password instead of bcyrpt-ed hash
-- [ ] Add TLS
-
-## FAQ
-
-- Doesn't Home Assistant already have Prometheus integration?
-    - Yes, but the [official integration](https://www.home-assistant.io/integrations/prometheus/) only exposes entity-related metrics, not host-related metrics.
-- Isn't there already an Prometheus add-on?
-    - Yes, but that [add-on](https://github.com/hassio-addons/addon-prometheus) is for Prometheus server, not the process exporter.
-- Why does this add-on require so many permissions?
-    - The add-on needs to access to host-level metrics (CPU, memory, disk, etc...). As such, I have requested all possible permissions. Please inspect the code of this add-on before you run it.
