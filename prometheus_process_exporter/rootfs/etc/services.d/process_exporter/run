@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: Prometheus Process Exporter
+# Runs the Prometheus Process Exporter
+# ==============================================================================
+bashio::log.info "Starting prometheus process exporter..."
+
+# Run Prometheus
+exec s6-setuidgid prometheus /usr/local/bin/process-exporter --config.path=/etc/prometheus_process-exporter_web.yml

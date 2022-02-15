@@ -1,0 +1,37 @@
+{
+  "name": "Prometheus Process Exporter",
+  "version": "dev",
+  "slug": "prometheus_process_exporter",
+  "description": "Prometheus process exporter process metrics",
+  "url": "https://github.com/loganmarchione/hassos-addons/tree/main/prometheus_process_exporter",
+  "arch": ["amd64","aarch64","armv7"],
+  "startup": "services",
+  "boot": "auto",
+  "init":false,
+  "options": {},
+  "schema": {},
+  "webui": "http://[HOST]:[PORT:9256]",
+  "ports": {
+    "9256/tcp": 9256
+  },
+  "ports_description": {
+    "9256/tcp": "Default process exporter port and web interface"
+  },
+  "hassio_api": true,
+  "homeassistant_api": true,
+  "auth_api": true,
+  "docker_api": true,
+  "host_network": true,
+  "host_pid": true,
+  "apparmor": false,
+  "options": {
+	"enable_basic_auth": false,
+    "basic_auth_user": "prom",
+	"basic_auth_pass": "$2a$12$Azy3nrjebl.U17DLmpX57.cUUKzm/PX5thtAkf7xl/hUHSJrm4VkS"
+  },
+  "schema": {
+	"enable_basic_auth": "bool",
+    "basic_auth_user": "str",
+	"basic_auth_pass": "str"
+  }
+}
