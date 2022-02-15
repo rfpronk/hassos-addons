@@ -10,4 +10,5 @@ exec ls -alh /usr/local/bin/process-exporter
 # Run Prometheus
 exec s6-setuidgid prometheus /usr/local/bin/process-exporter -config.path=/etc/prometheus_process-exporter.yml
 
-exec sleep 3000
+# Debug
+#exec sleep 3000

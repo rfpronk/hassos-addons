@@ -7,5 +7,3 @@ bashio::log.info "Starting prometheus node exporter..."
 
 # Run Prometheus
 exec s6-setuidgid prometheus /usr/local/bin/node_exporter --web.config=/etc/prometheus_node_exporter_web.yml
-
-sleep 3000

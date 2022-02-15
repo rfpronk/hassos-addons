@@ -14,6 +14,7 @@ COPY rootfs /
 RUN \
     ARCH="${BUILD_ARCH}" \
     && if [ "${BUILD_ARCH}" = "aarch64" ]; then ARCH="arm64"; fi \
+    && if [ "${BUILD_ARCH}" = "amd64" ]; then ARCH="386"; fi \
     && curl -J -L -o /tmp/process-exporter.tar.gz \
        "https://github.com/ncabatoff/process-exporter/releases/download/v${PROCESS_EXPORTER_VERSION}/process-exporter-${PROCESS_EXPORTER_VERSION}.linux-${ARCH}.tar.gz" \
     && cd /tmp \
