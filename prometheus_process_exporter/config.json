@@ -23,5 +23,5 @@
   "docker_api": true,
   "host_network": true,
   "host_pid": true,
-  "apparmor": false,
+  "apparmor": false
 }
