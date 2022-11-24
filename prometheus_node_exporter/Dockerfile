@@ -6,7 +6,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base system
 ARG BUILD_ARCH=amd64
-ENV NODE_EXPORTER_VERSION=1.3.1
+ENV NODE_EXPORTER_VERSION=1.4.0
 
 # Copy root filesystem
 COPY rootfs /
