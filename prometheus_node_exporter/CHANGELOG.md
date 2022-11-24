@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.6] - 2022-11-24
+- Make compatible with other arch
+- Bump to exporter 1.4.0
+
 ## [0.0.5] - 2022-02-13
 - Added HTTP Basic Auth
 
