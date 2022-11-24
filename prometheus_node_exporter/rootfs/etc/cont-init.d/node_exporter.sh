@@ -11,8 +11,8 @@ echo "${SUPERVISOR_TOKEN}" > '/run/home-assistant.token'
 # Node_exporter will run with a blank web config file in the meantime
 web_config_file=/etc/prometheus_node_exporter_web.yml
 touch $web_config_file
-chmod 740 $web_config_file
-chown root:prometheus $web_config_file
+#chmod 740 $web_config_file
+#chown root:prometheus $web_config_file
 
 # Poor man's debugger: check permissions on web config file
 #ls -la $web_config_file
