@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.0.7] - 2023-02-14
+- Bump to exporter 1.5.0
+
 ## [0.0.6] - 2022-11-24
 - Make compatible with other arch
 - Bump to exporter 1.4.0
