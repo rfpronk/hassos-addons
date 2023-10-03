@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.0.8] - 2023-10-03
+- Bump to exporter 1.6.1
+
 ## [0.0.7] - 2023-02-14
 - Bump to exporter 1.5.0
 
