@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.0.10] - 2024-05-08
+- Bump to exporter 1.8.0
+
 ## [0.0.9] - 2024-02-08
 - Bump to exporter 1.7.0
 - Remove override for base image
