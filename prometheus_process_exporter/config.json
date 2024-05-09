@@ -7,7 +7,7 @@
   "arch": ["amd64","aarch64","armv7"],
   "startup": "services",
   "boot": "auto",
-  "init":false,
+  "init": false,
   "options": {},
   "schema": {},
   "webui": "http://[HOST]:[PORT:9256]",
@@ -23,5 +23,15 @@
   "docker_api": true,
   "host_network": true,
   "host_pid": true,
-  "apparmor": false
+  "apparmor": false,
+  "options": {
+    "enable_basic_auth": false,
+    "basic_auth_user": "prom",
+    "basic_auth_pass": "$2a$12$Azy3nrjebl.U17DLmpX57.cUUKzm/PX5thtAkf7xl/hUHSJrm4VkS"
+  },
+  "schema": {
+    "enable_basic_auth": "bool",
+    "basic_auth_user": "str",
+    "basic_auth_pass": "str"
+  }
 }
