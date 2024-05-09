@@ -22,7 +22,7 @@ RUN \
        "https://github.com/ncabatoff/process-exporter/releases/download/v${PROCESS_EXPORTER_VERSION}/process-exporter-${PROCESS_EXPORTER_VERSION}.linux-${ARCH}.tar.gz" \
     && cd /tmp \
     && tar -xvf /tmp/process_exporter.tar.gz \
-    && cp process_exporter-${PROCESS_EXPORTER_VERSION}.linux-${ARCH}/process_exporter /usr/local/bin/ \
+    && cp process-exporter-${PROCESS_EXPORTER_VERSION}.linux-${ARCH}/process-exporter /usr/local/bin/process_exporter \
     && rm -f -r /tmp/* \
     && adduser -s /bin/false -D -H prometheus \
     && chown -R prometheus:prometheus /usr/local/bin/process_exporter \
