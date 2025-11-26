@@ -1,6 +1,6 @@
 {
   "name": "Prometheus Process Exporter",
-  "version": "1.11",
+  "version": "1.12",
   "slug": "prometheus_process_exporter",
   "description": "Prometheus process exporter process metrics",
   "url": "https://github.com/rfpronk/hassos-addons/tree/main/prometheus_process_exporter",
