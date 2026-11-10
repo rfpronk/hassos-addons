@@ -1,5 +1,8 @@
 # Changelog
 
+## [0.0.14] - 2026-11-10
+- Bump to exporter 1.12.1
+
 ## [0.0.13] - 2025-11-26
 - Bump to exporter 1.10.2
 
