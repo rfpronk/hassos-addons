@@ -1,8 +1,14 @@
-ARG BUILD_FROM
+ARG BUILD_FROM=ghcr.io/home-assistant/base:3.24
 FROM $BUILD_FROM
 
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+LABEL \
+  org.opencontainers.image.authors="Robin Pronk <robin@prnk.nl>" \
+  org.opencontainers.image.title="Prometheus Node Exporter" \
+  org.opencontainers.image.description="The Prometheus Node Exporter for hardware and OS metrics exposed by *NIX kernels." \
+  org.opencontainers.image.source="https://github.com/rfpronk/hassos-addons/tree/main/prometheus_node_exporter"
 
 # Setup base build system
 ARG BUILD_ARCH
